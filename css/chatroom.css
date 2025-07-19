@@ -176,7 +176,7 @@
     box-shadow: var(--shadow-button-raised-outer), var(--shadow-button-raised-inner); /* 입체감 있는 그림자 */
 }
 
-#send-message-button:hover {
+#send-message-button:hover{
     /* 호버 시 스타일 추가 */
 }
 
