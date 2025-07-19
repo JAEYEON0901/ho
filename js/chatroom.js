@@ -271,7 +271,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // NEW: 가져온 메시지가 없거나 배열이 아니면 추가적인 처리를 건너뜁니다.
             if (!Array.isArray(messages) || messages.length === 0) {
                  if (reset) { // reset이 true이고 메시지가 없으면 "글 없음" 메시지 표시
-                     messagesDisplay.innerHTML = '<div class="chat-message">그 누구도 글을 남겨주징 않았네...</div>';
+                     messagesDisplay.innerHTML = '<div class="chat-message">...자유롭게 떠드세요...</div>';
                  }
                 return; // 새로운 메시지가 없으면 함수 종료
             } else {
@@ -375,5 +375,5 @@ document.addEventListener('DOMContentLoaded', () => {
     // fetchChatMessages(false)는 lastFetchedTimestamp 이후의 메시지만 요청합니다.
     setInterval(() => fetchChatMessages(false), 30000); 
 
-    isChatOpen = false; // 채팅방 초기 상태를 '닫힘'으로 설정
+    isChatOpen = true; // 채팅방 초기 상태를 '닫힘'으로 설정
 });
