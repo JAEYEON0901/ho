@@ -375,5 +375,5 @@ document.addEventListener('DOMContentLoaded', () => {
     // fetchChatMessages(false)는 lastFetchedTimestamp 이후의 메시지만 요청합니다.
     setInterval(() => fetchChatMessages(false), 30000); 
 
-    isChatOpen = true; // 채팅방 초기 상태를 '닫힘'으로 설정
+    isChatOpen = false; // 채팅방 초기 상태를 '닫힘'으로 설정
 });
